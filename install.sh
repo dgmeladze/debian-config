@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
-curl -O https://raw.githubusercontent.com/rik1599/sway-config/master/setup.sh
-bash setup.sh
+git clone https://github.com/agung-satria/debian-sway.git ~/.dotfiles
+cd ~/.dotfiles/
+./install-sway.sh
 ## Update cache ##
 printf "\033[1;35m Updating cache... \033[0m\n"
 sudo apt update && sudo apt upgrade
