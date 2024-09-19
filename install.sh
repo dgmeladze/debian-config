@@ -1,12 +1,6 @@
 #!/usr/bin/env bash
-git clone 'https://github.com/redclimb/debian-sway-config.git'
-cd ./debian-sway-config
-chmod +x ./sway.sh
-chmod +x ./local.sh
-chmod +x ./customization.sh
-./sway.sh
-./local.sh
-./customization.sh
+curl -O https://raw.githubusercontent.com/rik1599/sway-config/master/setup.sh
+bash setup.sh
 ## Update cache ##
 printf "\033[1;35m Updating cache... \033[0m\n"
 sudo apt update && sudo apt upgrade
