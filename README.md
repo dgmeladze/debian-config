@@ -11,3 +11,5 @@ It installs my own setup for developing as web developer.
 
 Work is in progress, so you can write me, what I can make better.
 Feel free to use it! 
+
+In nearest future I'm gonna make it more and more cooler with my own configs
