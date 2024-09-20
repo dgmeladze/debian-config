@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
-git clone https://github.com/agung-satria/debian-sway.git ~/.dotfiles
-cd ~/.dotfiles/
-./install-sway.sh
+git clone 'https://github.com/redclimb/debian-sway-config.git'
+cd ./debian-sway-config
+chmod +x ./sway.sh
+chmod +x ./local.sh
+chmod +x ./customization.sh
+./sway.sh
+./local.sh
+./customization.sh
 ## Update cache ##
 printf "\033[1;35m Updating cache... \033[0m\n"
 sudo apt update && sudo apt upgrade
@@ -34,7 +39,7 @@ sudo apt update
 
 ## installation web developer minimum ##
 printf "\033[1;35m Installing, man, take a coffee... \033[0m\n"
-sudo apt install code ./google-chrome-stable_current_amd64.deb filezilla
+sudo apt install code apt filezilla
 sudo apt install pycharm-community
 sudo apt install phpstorm 
 sudo tar -xf /tmp/telegram.tar.xz -C /opt/
