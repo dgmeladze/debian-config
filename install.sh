@@ -23,6 +23,7 @@ printf "\033[1;35m Chrome... \033[0m\n"
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
 
+
 ## jetbrains ##
 printf "\033[1;35m Jetbrains... \033[0m\n"
 curl -s https://s3.eu-central-1.amazonaws.com/jetbrains-ppa/0xA6E8698A.pub.asc | gpg --dearmor | sudo tee /usr/share/keyrings/jetbrains-ppa-archive-keyring.gpg > /dev/null
@@ -40,6 +41,7 @@ sudo apt update
 ## installation web developer minimum ##
 printf "\033[1;35m Installing, man, take a coffee... \033[0m\n"
 sudo apt install code apt filezilla
+sudo apt install ./google-chrome-stable_current_amd64.deb
 sudo apt install pycharm-community
 sudo apt install phpstorm 
 sudo tar -xf /tmp/telegram.tar.xz -C /opt/
