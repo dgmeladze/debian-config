@@ -1,15 +1,19 @@
 # debian-sway-config
 
 Hello!
-This is my own debian sway config.
-It's a bit in progress and uses other persons theme and configuration for sway.
+I created this configuration for quickly setting up everything needed on a fresh Debian installation. To get started, you need a minimal Debian installation and Git installed.
 
-But this makes installing sway very easy.
+The commands are as follows:
+```sh
+git clone https://github.com/dgmeladze/debian-sway-config
+cd debian-sway-config
+sudo chmod +x ./install.sh
+./install.sh
+```
 
-It installs my own setup for developing as web developer.
+The setup uses a configuration similar to Ubuntu Sway Remix, which I used as a base but modified.
 
+I would appreciate any suggestions for themes and improvements.
+You can use this repository to simplify the installation of Sway on your Debian and quickly configure it.
 
-Work is in progress, so you can write me, what I can make better.
-Feel free to use it! 
-
-In nearest future I'm gonna make it more and more cooler with my own configs
+The setup is still under development and testing.
