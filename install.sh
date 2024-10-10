@@ -52,4 +52,5 @@ if [ "$choice" -eq 1 ]; then
     done
 fi
 
-systemctl enable lightdm
+sudo systemctl enable lightdm
+sudo systemctl enable iwd
