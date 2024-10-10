@@ -5,10 +5,7 @@
 sudo apt update && sudo apt upgrade -y
 
 # Установка необходимых пакетов
-sudo apt install -y swaybg swaylock waybar bemenu fonts-font-awesome fonts-ubuntu lxappearance zsh curl
-
-# Установка Oh My Zsh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+sudo apt install sway swaybg swaylock waybar wofi dunst alacritty bemenu fonts-font-awesome fonts-ubuntu lxappearance curl -y
 
 # Создание конфигурационной директории для Sway
 
