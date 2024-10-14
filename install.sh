@@ -51,6 +51,6 @@ if [ "$choice" -eq 1 ]; then
         [ -f "$script" ] && [ -x "$script" ] && "$script"
     done
 fi
-
+sudo apt install lightdm network-manager
 sudo systemctl enable lightdm
 sudo systemctl enable iwd

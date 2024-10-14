@@ -1,46 +1,50 @@
 #!/bin/bash
 
-# Обновление списка пакетов
-echo "Обновление списка пакетов..."
+# Update package list
+echo "Updating package list..."
 sudo apt update
 
-# Установка Zsh
-echo "Установка Zsh..."
-sudo apt install -y zsh\
+# Install Zsh
+echo "Installing Zsh..."
+sudo apt install -y zsh
 
-# Смена оболочки на Zsh
-echo "Смена оболочки на Zsh..."
-chsh -s $(which zsh)
+# Change default shell to Zsh
+echo "Changing default shell to Zsh..."
+sudo chsh -s $(which zsh) $USER
 
-# Установка Oh My Zsh
-echo "Установка Oh My Zsh..."
+# Install Oh My Zsh
+echo "Installing Oh My Zsh..."
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# Установка плагинов
-echo "Установка плагинов..."
+# Install plugins
+echo "Installing plugins..."
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
-# Настройка .zshrc
-echo "Настройка .zshrc..."
+# Configure .zshrc
+echo "Configuring .zshrc..."
 cat <<EOL >> ~/.zshrc
 
-# Установка темы
+# Set theme
 ZSH_THEME="agnoster"
 
-# Подключение плагинов
+# Enable plugins
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 EOL
 
-# Настройка Alacritty (проверка наличия файла конфигурации)
+# Configure Alacritty (check if config file exists)
 if [ ! -f ~/.config/alacritty/alacritty.yml ]; then
   mkdir -p ~/.config/alacritty
-  echo "Настройка Alacritty..."
+  echo "Configuring Alacritty..."
   cat <<EOL > ~/.config/alacritty/alacritty.yml
-# Конфигурация Alacritty
+# Alacritty configuration
 shell:
   program: /usr/bin/zsh
+
+# Window settings
+window:
+  opacity: 0.8  # Set the opacity level (0.0 to 1.0)
 EOL
 fi
 
-echo "Установка завершена! Пожалуйста, выйдите и войдите в систему, чтобы изменения вступили в силу."
+echo "Installation complete! Please log out and log back in for changes to take effect."
