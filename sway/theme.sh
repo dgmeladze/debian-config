@@ -139,10 +139,10 @@ cat <<EOL > ~/.config/systemd/user/waybar.service
 Description=Waybar
 After=graphical-session.target
 
-[Service]
-ExecStart=/usr/bin/waybar
-Restart=always
-RestartSec=10
+#[Service]
+#ExecStart=/usr/bin/waybar
+#Restart=always
+#RestartSec=10
 
 [Install]
 WantedBy=default.target
