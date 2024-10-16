@@ -30,10 +30,13 @@ sudo apt full-upgrade
 sudo apt autoremove
 
 # Run the sway scripts sequentially
+chmod + xsway/*.sh
 ./sway/sway.sh
 ./sway/dependencies.sh
 ./sway/theme.sh
 
+chmod +x additional/*.sh
+chmod +x tools/*.sh
 # Run all scripts in the additional directory
 for script in ./additional/*.sh; do
     [ -f "$script" ] && [ -x "$script" ] && "$script"
