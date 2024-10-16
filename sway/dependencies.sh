@@ -5,7 +5,7 @@ sudo apt update && sudo apt upgrade -y
 
 # Установка необходимых пакетов
 sudo apt install swaybg swaylock waybar wofi dunst alacritty bemenu fonts-font-awesome lxappearance curl -y
-sudo apt install pavucontrol playerctl mako nwg-bar nwg-look pluma qt5ct qt6ct rofi swappy sway-input -y
+sudo apt install pavucontrol playerctl mako nwg-bar nwg-look pluma qt5ct qt6ct rofi swappy sway-input qt5-style-kvantum -y
 
 # Создание конфигурационной директории для Sway
 mkdir -p ~/.config/sway
