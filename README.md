@@ -25,7 +25,7 @@ git clone https://github.com/dgmeladze/debian-sway-config
 cd debian-sway-config
 sudo chmod +x ./install.sh
 ./install.sh
-
+```
 
 
 Contributions
