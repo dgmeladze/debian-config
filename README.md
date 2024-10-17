@@ -7,7 +7,7 @@ This project provides a streamlined configuration for setting up the Sway window
 ## Features
 
 - **Quick Setup:** Easily install and configure Sway on your Debian system.
-- **Customizable:** Theme based on the Ubuntu Sway Remix, with modifications to suit various preferences.
+- **Customizable:** Based on the Ubuntu Sway Remix, with modifications to suit various preferences.
 - **Active Development:** This configuration is under continuous development, with new features and improvements being added regularly.
 
 ## Prerequisites
@@ -28,6 +28,22 @@ sudo chmod +x ./install.sh
 ```
 
 
+Developer Tools
+
+This setup includes a selection of essential web development tools:
+
+    PyCharm Community
+    PhpStorm
+    FileZilla
+    JetBrains Toolbox
+
+Additional Programs
+
+You may also find these applications useful:
+
+    Google Chrome
+    Telegram
+
 Contributions
 
 I welcome suggestions for themes and improvements! Your feedback can help make this configuration even better. Feel free to open issues or submit pull requests with your ideas.
@@ -36,7 +52,4 @@ Notes
     This setup is still under development and testing. Please report any bugs or issues you encounter.
 
 Thank you for checking out Debian Sway Config! Enjoy your Sway experience on Debian!
-
-
-
 Feel free to adjust any part of it to better match your style or add additional details!
