@@ -7,7 +7,7 @@ This project provides a streamlined configuration for setting up the Sway window
 ## Features
 
 - **Quick Setup:** Easily install and configure Sway on your Debian system.
-- **Customizable:** Based on the Ubuntu Sway Remix, with modifications to suit various preferences.
+- **Customizable:** Theme based on the Ubuntu Sway Remix, with modifications to suit various preferences.
 - **Active Development:** This configuration is under continuous development, with new features and improvements being added regularly.
 
 ## Prerequisites
