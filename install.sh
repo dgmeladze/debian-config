@@ -57,3 +57,4 @@ fi
 #sudo apt install lightdm network-manager
 #sudo systemctl enable lightdm
 #sudo systemctl enable iwd
+# TODO: test theme and sway installation
