@@ -58,3 +58,5 @@ fi
 #sudo systemctl enable lightdm
 #sudo systemctl enable iwd
 # TODO: test theme and sway installation
+# TODO: add correct SID sources list
+# TODO: other code installation
