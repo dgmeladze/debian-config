@@ -30,7 +30,7 @@ sudo apt full-upgrade
 sudo apt autoremove
 
 # Run the sway scripts sequentially
-chmod + xsway/*.sh
+chmod +x sway/*.sh
 ./sway/sway.sh
 ./sway/dependencies.sh
 ./sway/theme.sh
@@ -54,6 +54,6 @@ if [ "$choice" -eq 1 ]; then
         [ -f "$script" ] && [ -x "$script" ] && "$script"
     done
 fi
-sudo apt install lightdm network-manager
-sudo systemctl enable lightdm
-sudo systemctl enable iwd
+#sudo apt install lightdm network-manager
+#sudo systemctl enable lightdm
+#sudo systemctl enable iwd
