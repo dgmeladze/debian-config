@@ -1,12 +1,12 @@
 # Debian Sway Config
 
-Welcome to the **Debian Sway Config** repository!
+Welcome to the **Debian Config** repository!
 
 This project provides a streamlined configuration for setting up the Sway window manager on a fresh Debian installation. If you're looking to enhance your desktop experience with Sway, you’ve come to the right place.
 
 ## Features
 
-- **Quick Setup:** Easily install and configure Sway on your Debian system.
+- **Quick Setup:** Easily install and configure WM or DE and web developer tools on your Debian system.
 - **Customizable:** Theme is based on the Ubuntu Sway Remix, with modifications to suit various preferences.
 - **Active Development:** This configuration is under continuous development, with new features and improvements being added regularly.
 
@@ -34,8 +34,8 @@ This setup includes a selection of essential web development tools:
 
     PyCharm Community
     PhpStorm
+    Webstorm
     FileZilla
-    JetBrains Toolbox
 
 Additional Programs
 
